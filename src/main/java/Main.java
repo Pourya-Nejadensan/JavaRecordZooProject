@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         Animal dog = new Animal(1, "Buddy", "Dog", 3);
+        Animal dog2 = new Animal(6, "Buddy", "Dog", 3);
+
         Animal cat = new Animal(2, "Whiskers", "Cat", 2);
         Animal parrot = new Animal(3, "Polly", "Parrot", 4);
         Animal rabbit = new Animal(4, "Thumper", "Rabbit", 1);
@@ -16,5 +18,9 @@ public class Main {
         System.out.println(dog.equals(parrot));
         System.out.println(dog.equals(rabbit));
         System.out.println(dog.equals(turtle));
+
+        System.out.println(dog.equals(dog2));
+
+        System.out.println(dog.name().equals(dog2.name()));
     }
 }
