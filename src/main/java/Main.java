@@ -2,6 +2,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         Species dogs = new Species("dog", 1000);
         Species cats = new Species("cat", 200);
         Species rabbits = new Species("rabbit", 150);
@@ -41,5 +42,11 @@ public class Main {
         System.out.println(pourya);
         System.out.println(eva);
         System.out.println(rinae);
+
+        // Bonus Zoo -------------------------------------------------------------------
+
+        Zoo zoo = new Zoo(List.of(dog, dog2, cat, parrot, rabbit, turtle));
+        System.out.println(zoo);
+        System.out.println(zoo.calcAllAnimalsFoodRequirement());
     }
 }
