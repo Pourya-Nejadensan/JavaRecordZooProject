@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Animal dog = new Animal(1, "Buddy", "Dog", 3);
@@ -22,5 +24,15 @@ public class Main {
         System.out.println(dog.equals(dog2));
 
         System.out.println(dog.name().equals(dog2.name()));
+
+        // Nesting ------------------------------------------------------------------
+
+        Owner pourya = new Owner("Pourya", 33, "123 Main St", List.of(dog, cat));
+        Owner eva = new Owner("Eva", 15, "456 Elm St", List.of(parrot));
+        Owner rinae = new Owner("Charlie", 14, "789 Oak St", List.of(rabbit, turtle));
+
+        System.out.println(pourya);
+        System.out.println(eva);
+        System.out.println(rinae);
     }
 }
