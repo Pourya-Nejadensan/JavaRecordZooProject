@@ -2,13 +2,20 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Animal dog = new Animal(1, "Buddy", "Dog", 3);
-        Animal dog2 = new Animal(6, "Buddy", "Dog", 3);
+        Species dogs = new Species("dog", 1000);
+        Species cats = new Species("cat", 200);
+        Species rabbits = new Species("rabbit", 150);
+        Species parrots = new Species("parrot", 400);
+        Species turtles = new Species("turtle", 600);
 
-        Animal cat = new Animal(2, "Whiskers", "Cat", 2);
-        Animal parrot = new Animal(3, "Polly", "Parrot", 4);
-        Animal rabbit = new Animal(4, "Thumper", "Rabbit", 1);
-        Animal turtle = new Animal(5, "Shelly", "Turtle", 10);
+
+        Animal dog = new Animal(1, "Buddy", dogs, 3);
+        Animal dog2 = new Animal(6, "Buddy", dogs, 3);
+
+        Animal cat = new Animal(2, "Whiskers", cats, 2);
+        Animal parrot = new Animal(3, "Polly", parrots, 4);
+        Animal rabbit = new Animal(4, "Thumper", rabbits, 1);
+        Animal turtle = new Animal(5, "Shelly", turtles, 10);
 
         System.out.println(dog);
         System.out.println(cat);
